@@ -1,15 +1,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-bases:
-  - ../kubernetes_efk/elasticsearch
-
 resources:
   - es-sts.yaml
   - es-svc.yaml
-#  - fluentd/fluentd-ds.yaml
-#  - fluentd/fluentd-sa.yaml
-#  - fluentd/fluentd-rb.yaml
-#  - fluentd/fluentd-role.yaml
-#  - kibana/kibana-deployment.yaml
-#  - kibana/kibana-svc.yaml
